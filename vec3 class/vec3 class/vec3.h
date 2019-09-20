@@ -5,19 +5,19 @@
 	
 class vec3 {
 
-private:
+private: //deberian ser públicas
 	float		x, y, z;
 
 public:
 
 	//constructors
-	vec3() :x(0), y(0), z(0) {}
+	vec3() :x(0), y(0), z(0) {} //arreglar esto, que esta inicialización es más lenta
 	vec3(const float x, const float y, const float z):x(x), y(y), z(z) {}
 	
 	//destructors
 	~vec3() {}
 
-	//functions
+	//functions //estas funciones no hacen falta, debido a que x, y, z deberian ser públicas
 	float getX() const { return x; }
 	float getY() const { return y; }
 	float getZ() const { return z; }
